@@ -1,0 +1,7 @@
+@import "../../../styles/variables";
+
+
+.filters {
+    max-width: 400px;
+    @include set-color-theme(color, clr-text);
+}

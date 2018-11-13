@@ -1,0 +1,23 @@
+@import "./variables";
+
+.tinyText {
+    font-size: $text-size-tiny;
+}
+
+.subText {
+    opacity: $opacity-overflow;
+}
+
+.isHint {
+    @include set-color-theme('color', clr-option-first);
+
+    font-size: $text-size-tiny;
+}
+
+label.isLabel {
+    @include set-color-theme('color', clr-option-first);
+
+    font-size: $text-size-small;
+    display: block;
+}
+

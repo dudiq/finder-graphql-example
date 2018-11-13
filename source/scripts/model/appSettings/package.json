@@ -1,0 +1,5 @@
+{
+  "name": "appSettings",
+  "private": true,
+  "main": "appSettings.js"
+}

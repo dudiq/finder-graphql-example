@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.layout {
+    max-width: $browser-1024;
+    margin: 0 auto;
+    @include set-color-theme(color, clr-text);
+    position: relative;
+}
+
+.header {
+
+}
+
+.content {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.leftPanel {
+    display: table-cell;
+    width: 20%;
+}
+
+.centerPanel {
+    display: table-cell;
+    width: 80%;
+}
+
+.offset {
+    padding: $padding-small;
+}

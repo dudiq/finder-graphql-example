@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.fieldInput {
+    width: 100%;
+    border-bottom: 0;
+    position: relative;
+    padding: $padding-small 0;
+
+    input {
+        font-size: $text-size-normal;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid transparent;
+        border-radius: 0; //ios fix
+        @include set-color-theme('border-bottom-color', clr-separator);
+        &:focus {
+            @include set-color-theme('border-bottom-color', clr-text);
+        }
+    }
+    input[readonly] {
+        opacity: $opacity-disabled;
+    }
+}
+
+.isDisabled {
+    opacity: $opacity-disabled;
+}

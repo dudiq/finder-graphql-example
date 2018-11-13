@@ -1,0 +1,5 @@
+{
+  "name": "Searcher",
+  "private": true,
+  "main": "./Searcher.js"
+}

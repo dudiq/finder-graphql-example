@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+$btn-min-height: 32px;
+
+.btn {
+    @include drop-outline();
+    @include set-color-theme('background-color', clr-primary);
+    @include set-color-theme('color', clr-primary-text);
+    @include set-color-theme-sub('box-shadow', clr-shadow, '1px 1px 4px 0px', '');
+
+    border-radius: $btn-min-height;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: $padding-tiny $padding-normal;
+    text-align: center;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: $btn-min-height;
+}
+
+.btnWrap {
+    display: table;
+    //table-layout: fixed;// no need to do this!
+    width: 100%;
+    height: 100%;
+}
+
+.btnContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btnDisabled {
+    @include set-color-theme('background-color', clr-disable);
+    opacity: $opacity-disabled;
+    cursor: not-allowed;
+}
+
+@import "./ripple";

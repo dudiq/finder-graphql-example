@@ -1,0 +1,11 @@
+dist/
+bundle/
+node_modules/
+.cache/
+.idea/
+.tmp/
+.examples/
+
+source/configs/config.js
+source/configs/config.local.js
+source/generated/

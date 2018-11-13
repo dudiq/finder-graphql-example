@@ -1,0 +1,54 @@
+//
+// COMMON sizes only!!!
+//
+
+// padding
+$padding-hard: 30px;
+$padding-big: 20px;
+$padding-normal: 16px;
+$padding-small: 10px;
+$padding-tiny: 4px;
+
+// margin
+$margin-big: 20px;
+$margin-normal: 16px;
+$margin-small: 10px;
+$margin-tiny: 4px;
+
+// border
+$border-radius-big: 6px;
+$border-radius-normal: 4px;
+$border-radius-small: 2px;
+$border-radius-tiny: 1px;
+
+$border-normal: 2px;
+
+// text
+$text-size-king: 22px;
+$text-size-hard: 18px;
+$text-size-big: 16px;
+$text-size-normal: 14px;
+$text-size-small: 12px;
+$text-size-tiny: 10px;
+
+// screen
+$screen-hard: 820px;
+$screen-big: 640px;
+$screen-normal: 450px;
+$screen-small: 320px;
+
+//opacity
+$opacity-high: .95;
+$opacity-default: .8;
+$opacity-overflow: .6;
+$opacity-disabled: .5;
+
+
+// browser
+$browser-640: 640px;
+$browser-768: 768px;
+$browser-1024: 1024px;
+$browser-1148: 1148px;
+$browser-to-mobile: 567px;
+$browser-to-mobile_min: $browser-to-mobile + 1px;
+

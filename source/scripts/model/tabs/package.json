@@ -1,0 +1,5 @@
+{
+  "name": "tabs",
+  "private": true,
+  "main": "tabs.js"
+}

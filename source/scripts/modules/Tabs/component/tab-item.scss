@@ -1,0 +1,22 @@
+@import "../../../../styles/variables";
+
+
+.tabItem {
+    display: inline-block;
+    margin: $margin-tiny;
+    border-bottom: 2px solid transparent;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.close {
+    padding: $padding-tiny;
+    cursor: pointer;
+}
+
+.isActive {
+    @include set-color-theme(color, clr-primary);
+    @include set-color-theme(border-color, clr-primary);
+}

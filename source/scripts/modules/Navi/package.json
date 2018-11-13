@@ -1,0 +1,5 @@
+{
+  "name": "Navi",
+  "private": true,
+  "main": "./Navi.js"
+}

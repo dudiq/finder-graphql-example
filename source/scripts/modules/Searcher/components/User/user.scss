@@ -1,0 +1,12 @@
+@import "../../../../../styles/variables";
+
+.repo {
+    margin: $margin-normal 0;
+}
+.avatar {
+    max-width: 50px;
+    max-height: 50px;
+    img {
+        width: 100%;
+    }
+}

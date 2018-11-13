@@ -1,0 +1,30 @@
+@import "variables";
+
+@mixin make-grid($name, $total) {
+    @for $i from 1 through $total {
+        .#{$name}-#{$total}-#{$i} {
+            width: $i / $total * 100%;
+        }
+    }
+}
+
+.grid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.grid-row {
+    display: table-row;
+}
+
+.grid-cell {
+    display: table-cell;
+    padding: $padding-tiny 0;
+    + .grid-cell {
+        padding-left: $padding-small;
+    }
+}
+
+@include make-grid('grid-coll', 8);
+@include make-grid('grid-coll', 12);

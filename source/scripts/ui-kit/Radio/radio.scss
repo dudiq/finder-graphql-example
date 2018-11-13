@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.fieldRadio {
+    margin: $margin-small $margin-tiny;
+    label {
+        margin-left: $margin-tiny;
+    }
+
+    input[type="radio"] {
+        opacity: 0.0001;
+        &:checked + label:before {
+            @include set-color-theme(border-color, clr-primary);
+            @include set-color-theme(color, clr-primary);
+        }
+        &:checked + label:after {
+            transform: scale(1);
+        }
+    }
+
+    label {
+        position: relative;
+        padding: 0 0 0 $padding-big + ($padding-tiny / 2);
+        margin-bottom: 0;
+        cursor: pointer;
+        vertical-align: bottom;
+        &:before, &:after {
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            transition: all $delay-fast ease;
+            transition-property: transform, border-color;
+        }
+        &:before {
+            left: 0;
+            top: 0;
+            width: $margin-small + $margin-tiny;
+            height: $margin-small + $margin-tiny;
+            border: $border-normal solid;
+            @include set-color-theme(border-color, clr-primary);
+
+        }
+        &:after {
+            top: $margin-small / 2;
+            left: $margin-small / 2;
+            width: $margin-tiny * 2;
+            height: $margin-tiny * 2;
+            transform: scale(0);
+            @include set-color-theme(background, clr-primary);
+        }
+    }
+
+}

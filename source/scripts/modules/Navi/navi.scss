@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.navi {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.buttons {
+    display: table-cell;
+    width: 150px;
+}
+
+.tabs {
+    display: table-cell;
+    vertical-align: middle;
+}
