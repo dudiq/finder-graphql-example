@@ -1,7 +1,8 @@
 import ApolloClient from 'apollo-boost';
 import config from '../../../configs/config';
 
-const TOKEN = config.github.token;
+const initialToken = config.github.token;
+let TOKEN = initialToken;
 
 const client = new ApolloClient({
     uri: config.github.uri,
@@ -18,6 +19,9 @@ const client = new ApolloClient({
 });
 
 const graphApi = {
+    updateToken: function(val) {
+        TOKEN = val || initialToken;
+    },
     getApolloClient: function () {
         return client;
     },

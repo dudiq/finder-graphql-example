@@ -16,6 +16,7 @@ class Wrap extends Component {
 
     static contextTypes = {
         appSettings: propTypes.object,
+        graphApi: propTypes.object,
     };
 
     constructor(props) {
@@ -26,9 +27,11 @@ class Wrap extends Component {
     }
 
     onChangeToken = (ev) => {
+        const val = ev.target.value;
         this.setState({
-            token: ev.target.value,
+            token: val,
         });
+        this.context.graphApi.updateToken(val);
     };
 
     onLangChange = () => {

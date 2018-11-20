@@ -39,5 +39,5 @@ const startQuery = gql`
 
 export default {
     [queryType.initialQuery]: startQuery,
-    [queryType.pagingQuery]: pagingQuery
+    [queryType.pagingQuery]: pagingQuery,
 };
