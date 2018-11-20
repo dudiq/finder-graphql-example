@@ -4,6 +4,8 @@ Based on React and [Parcel Bundler].
 
 > DON'T FORGET about safe write in ide [https://en.parceljs.org/hmr.html#safe-write](https://en.parceljs.org/hmr.html#safe-write) DOH!
 
+[Demo](https://dudiq.github.io/finder-graphql-example/)
+
 ### Setup
 
 ```
